@@ -20,6 +20,7 @@ below.
 | **[docsearch](https://github.com/christian-gregorcik/docsearch)** · TypeScript | Hybrid search over your own documents. Postgres full-text and pgvector in one database, merged with reciprocal rank fusion. On the eval set neither half answers every query and the pair answers all of them. |
 | **[evalbox](https://github.com/christian-gregorcik/evalbox)** · Python | Run a suite of checks against a language model and fail the build when it regresses. Each case is repeated and judged on the share that passed, because one sample of a non-deterministic system is an anecdote. |
 | **[toolloop](https://github.com/christian-gregorcik/toolloop)** · Python | The tool-calling loop, written out. Schemas from type hints, parallel calls, budgets, a trace. No dependencies. |
+| **[llmgate](https://github.com/christian-gregorcik/llmgate)** · Go | A reverse proxy in front of one API. Per-client rate limits, retries that give way to the upstream’s Retry-After, a circuit breaker and Prometheus counters. Standard library only; the clock is injected, so the suite tests retry behaviour without sleeping. |
 | **[llm-json](https://github.com/christian-gregorcik/llm-json)** · TypeScript | Parse and validate JSON from model output, with bounded repair retries. |
 | **[scb-mcp](https://github.com/christian-gregorcik/scb-mcp)** · TypeScript | An MCP server over Statistics Sweden's business register. The protocol implemented, not wrapped. |
 | **[sidgranskare](https://github.com/christian-gregorcik/sidgranskare)** · JavaScript | Measures a public web page and reports the most serious findings, with an SSRF guard on every request the page makes, not just the first. |
@@ -28,7 +29,7 @@ Every one of them has tests that run offline, no API key and nothing to sign up 
 
 ### What I work with
 
-Python · TypeScript · JavaScript · Node · React Native · PostgreSQL · pgvector ·
+Python · TypeScript · JavaScript · Go · Node · React Native · PostgreSQL · pgvector ·
 Supabase · Docker · Cloudflare Workers · MCP · LLM integration and structured output ·
 retrieval and evals · SQL · Git
 
